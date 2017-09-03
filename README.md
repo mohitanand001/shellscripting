@@ -148,3 +148,6 @@ Hence for creating a file we can do:
 if ```[ -f "$filevar" ]``` is satisfied, it means the file is present, so no need to execute the
 second block
  
+## Additional 
+Linux Users and groups <br>
+https://www.linode.com/docs/tools-reference/linux-users-and-groups
