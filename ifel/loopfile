@@ -1,0 +1,10 @@
+#!/bin/bash
+#simple looping through a string
+
+filevar="a b c d"
+
+for name in "$filevar"
+do
+	echo $name
+done
+

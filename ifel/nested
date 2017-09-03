@@ -1,0 +1,15 @@
+#!/bin/bash
+#demo of nested if-else
+
+
+if [ $1 -gt $2 ]
+then
+	echo $1 is greater than $2
+	if [ $(($1*$2)) -gt 23 ] && [ $1 -ne $2 ]
+	then
+		echo both satisfied
+	fi
+else
+	echo $2 is greater than or equal to $1
+
+fi
