@@ -1,0 +1,4 @@
+#!/bin/bash
+#create file if does not exist
+
+[ -f "$1" ] || touch "$1" 

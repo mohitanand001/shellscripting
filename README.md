@@ -48,9 +48,6 @@ var5=$( ls | wc -l )                    #substituting a command/or return value 
 var6=$( func_name $param1 $param2 )     #storing the return value  from a function
 ```
 It is important that there is no space between the varialble the '=' sign and the rhs.<br>
-## Directory existence
-How to detect whether a directory exists or not. <br>
-https://stackoverflow.com/questions/59838/check-if-a-directory-exists-in-a-shell-script?answertab=votes#tab-top
 
 ## Single quotes vs Double quotes!!
 ```
@@ -72,3 +69,64 @@ the value of var1 is 5
 2. Read with prompt (p)
 3. Read with silence (s)
 4. echo 
+
+## Conditionals
+```
+if [ $1 -gt $2 ]
+then
+  echo $1 greater than $2
+elif [ $2 -gt than $1 ]
+  echo $2 is greater than $1
+else
+  echo equal
+fi  
+```
+Don't forget the ```fi``` in the end. <br>
+``` -gt : greater than
+    -lt : less than
+    -ge : greater than equal to
+    -le : less than equal to
+    -ne : not equal to
+    -eq : interprets both sides as integer and compares them
+     == : interprets both sides as string and compares them
+```
+## == vs eq
+https://unix.stackexchange.com/questions/16109/bash-double-equals-vs-eq
+## Directory existence
+How to detect whether a directory exists or not. <br>
+https://stackoverflow.com/questions/59838/check-if-a-directory-exists-in-a-shell-script?answertab=votes#tab-top
+
+## File exists
+filevar=$1
+``` [ -e filevar ] ```
+```
+filevar="a b c d"
+for name in $filevar
+do
+  echo name
+done
+```
+```
+Output: 
+a
+b
+c
+d
+```
+This will first split the filevar into ```a```, ```b```,```c```, and ```d``` and hence can be a problem at times,<br>
+when we want to treat ```a b c d``` as a single filename(which is not recommended ) we can modify the code<br>
+by adding a double quotes around ```$filevar``` in the for loop.<br>
+
+```
+filevar="a b c d"
+for name in "$filevar"
+do
+  echo name
+done
+```
+```
+Output:
+a b c d
+```
+Read more
+https://unix.stackexchange.com/questions/131766/why-does-my-shell-script-choke-on-whitespace-or-other-special-characters

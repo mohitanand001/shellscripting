@@ -1,0 +1,12 @@
+#!/bin/bash
+#demo of elif
+
+if [ $(( $1%3)) -eq 0 ]
+then
+	echo divisible by 3
+elif [ $(($1%3)) -eq 1 ]
+then
+	echo rem is 1
+else
+	echo rem is 2
+fi
