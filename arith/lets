@@ -1,0 +1,13 @@
+#!/bin/bash
+#demos the use of let statement
+
+let a=5+12 #no space between lhs and rhs
+echo $a
+let "a = 453 + 1234 "  #space can be given bw lhs and rhs
+echo $a
+let a++
+echo $a
+let "a = 4 * 5"
+echo $a 
+let "a = $1 + 78"
+echo $a 

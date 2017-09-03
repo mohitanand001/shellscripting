@@ -1,0 +1,8 @@
+#!/bin/bash
+#demo of expr. expr is similar to let but instead of saving to a variable, it prints it
+
+expr 1+10
+expr 1 + 10
+expr "1 + 123 "
+epxr 5 \* 20  #escaping needed for *
+
