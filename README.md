@@ -150,4 +150,7 @@ second block
  
 ## Additional 
 Linux Users and groups <br>
+Only two individual can change the permission of a file or directory <br>
+1. The owner(generally the creator of the file)
+2. The root user
 https://www.linode.com/docs/tools-reference/linux-users-and-groups
