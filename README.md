@@ -130,3 +130,21 @@ a b c d
 ```
 Read more
 https://unix.stackexchange.com/questions/131766/why-does-my-shell-script-choke-on-whitespace-or-other-special-characters
+<br>
+
+```&&``` and ```||``` follows the same short-ciruit trick as in other languages.<br>
+i.e. 
+```
+[ <cond1> ] && [ <cond2> ] 
+``` 
+If ```[ <cond1> ]``` is not satisfied, ```[ <cond2> ]``` is not executed.<br>
+Similarly <br>
+```[ <cond1> ] || [ <cond2> ] 
+``` 
+If ```[ <cond1> ]``` is satisfied, ```[ <cond2> ]``` is not executed.<br>
+
+Hence for creating a file we can do:
+```[ -f "$filevar" ] || [ touch "$filevar" ]```
+if ```[ -f "$filevar" ]``` is satisfied, it means the file is present, so no need to execute the
+second block
+ 
