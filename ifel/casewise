@@ -1,0 +1,13 @@
+#!/bin/bash
+#case wise execution, switch case
+
+case $1 in 
+	1)
+	echo 1;;
+	2) 
+	echo 2;;
+	3)
+	echo 3;;
+	*)
+	echo not among 1 2 and 3
+esac
