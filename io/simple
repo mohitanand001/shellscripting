@@ -1,0 +1,5 @@
+#!/bin/bash
+#simple read and output
+
+read var1
+echo $var1

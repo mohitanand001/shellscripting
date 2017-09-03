@@ -1,0 +1,9 @@
+#!/bin/bash
+#read username and pass with prompt and silent mode
+#p-prompt,a prompt will be displayed for input
+#s-silent,the input wont be displayed
+
+read -p 'username: ' username1
+read -sp 'password: ' passkey1
+
+echo username is $username1
