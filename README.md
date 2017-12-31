@@ -72,14 +72,26 @@ the value of var1 is 5
 
 ## Conditionals
 ```
+#/bin/bash
+echo $1
+echo $2
 if [ $1 -gt $2 ]
 then
   echo $1 greater than $2
-elif [ $2 -gt than $1 ]
+elif [ $2 -gt $1 ]
+then
   echo $2 is greater than $1
 else
   echo equal
 fi  
+```
+Notice that $1 and $2 are the command line args.
+How to run??
+```
+bash example.sh 4 5
+4
+5
+5 is greater than 4
 ```
 Don't forget the ```fi``` in the end. <br>
 ``` -gt : greater than
