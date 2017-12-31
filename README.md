@@ -19,6 +19,13 @@ This is called shebang
 It actually defines which program actually runs the current script.In fact we can use shebang on any file
 be it Python, Javascript.. <br>
 https://unix.stackexchange.com/questions/87560/does-the-shebang-determine-the-shell-which-runs-the-script <br>
+The ```which``` command in terminal helps locate where in the linux the command is actually stored.
+```
+which bash
+/bin/bash
+which python
+/usr/bin/python
+```
 
 ## What is $PATH? <br>
 $PATH is an environment variable, which lists colon seperated list of directories. <br>
