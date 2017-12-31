@@ -104,6 +104,23 @@ Don't forget the ```fi``` in the end. <br>
 ```
 ## == vs eq
 https://unix.stackexchange.com/questions/16109/bash-double-equals-vs-eq
+The following program will output **yes** since -eq does a integer comparison and 
+```
+if[[ 01 -eq 1 ]] 
+then
+echo yes
+else
+echo no
+```
+The following program will output **no** since == does a string comparison and "01" is not equal to "1"
+```
+if[[ 01 == 1 ]] 
+then
+echo yes
+else
+echo no
+```
+
 ## Directory existence
 How to detect whether a directory exists or not. <br>
 https://stackoverflow.com/questions/59838/check-if-a-directory-exists-in-a-shell-script?answertab=votes#tab-top
