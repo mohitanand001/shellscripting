@@ -174,9 +174,8 @@ i.e.
 [ <cond1> ] && [ <cond2> ] 
 ``` 
 If ```[ <cond1> ]``` is not satisfied, ```[ <cond2> ]``` is not executed.<br>
-Similarly <br>
-```[ <cond1> ] || [ <cond2> ] 
-``` 
+Similarly
+```[ <cond1> ] || [ <cond2> ] ``` 
 If ```[ <cond1> ]``` is satisfied, ```[ <cond2> ]``` is not executed.<br>
 
 Hence for creating a file we can do:
